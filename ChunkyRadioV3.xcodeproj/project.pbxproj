@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB9FFA401C17EF5500D8B38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FFA3F1C17EF5500D8B38C /* AppDelegate.swift */; };
+		BB9FFA421C17EF5500D8B38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FFA411C17EF5500D8B38C /* ViewController.swift */; };
+		BB9FFA451C17EF5500D8B38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9FFA431C17EF5500D8B38C /* Main.storyboard */; };
+		BB9FFA481C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB9FFA461C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld */; };
+		BB9FFA4A1C17EF5500D8B38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9FFA491C17EF5500D8B38C /* Assets.xcassets */; };
+		BB9FFA4D1C17EF5500D8B38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9FFA4B1C17EF5500D8B38C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB9FFA3C1C17EF5500D8B38C /* ChunkyRadioV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChunkyRadioV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9FFA3F1C17EF5500D8B38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB9FFA411C17EF5500D8B38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB9FFA441C17EF5500D8B38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB9FFA471C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChunkyRadioV3.xcdatamodel; sourceTree = "<group>"; };
+		BB9FFA491C17EF5500D8B38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB9FFA4C1C17EF5500D8B38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB9FFA4E1C17EF5500D8B38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB9FFA391C17EF5500D8B38C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB9FFA331C17EF5500D8B38C = {
+			isa = PBXGroup;
+			children = (
+				BB9FFA3E1C17EF5500D8B38C /* ChunkyRadioV3 */,
+				BB9FFA3D1C17EF5500D8B38C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB9FFA3D1C17EF5500D8B38C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB9FFA3C1C17EF5500D8B38C /* ChunkyRadioV3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB9FFA3E1C17EF5500D8B38C /* ChunkyRadioV3 */ = {
+			isa = PBXGroup;
+			children = (
+				BB9FFA3F1C17EF5500D8B38C /* AppDelegate.swift */,
+				BB9FFA411C17EF5500D8B38C /* ViewController.swift */,
+				BB9FFA431C17EF5500D8B38C /* Main.storyboard */,
+				BB9FFA491C17EF5500D8B38C /* Assets.xcassets */,
+				BB9FFA4B1C17EF5500D8B38C /* LaunchScreen.storyboard */,
+				BB9FFA4E1C17EF5500D8B38C /* Info.plist */,
+				BB9FFA461C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld */,
+			);
+			path = ChunkyRadioV3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB9FFA3B1C17EF5500D8B38C /* ChunkyRadioV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9FFA511C17EF5500D8B38C /* Build configuration list for PBXNativeTarget "ChunkyRadioV3" */;
+			buildPhases = (
+				BB9FFA381C17EF5500D8B38C /* Sources */,
+				BB9FFA391C17EF5500D8B38C /* Frameworks */,
+				BB9FFA3A1C17EF5500D8B38C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChunkyRadioV3;
+			productName = ChunkyRadioV3;
+			productReference = BB9FFA3C1C17EF5500D8B38C /* ChunkyRadioV3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB9FFA341C17EF5500D8B38C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Scott;
+				TargetAttributes = {
+					BB9FFA3B1C17EF5500D8B38C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = BB9FFA371C17EF5500D8B38C /* Build configuration list for PBXProject "ChunkyRadioV3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB9FFA331C17EF5500D8B38C;
+			productRefGroup = BB9FFA3D1C17EF5500D8B38C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB9FFA3B1C17EF5500D8B38C /* ChunkyRadioV3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB9FFA3A1C17EF5500D8B38C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9FFA4D1C17EF5500D8B38C /* LaunchScreen.storyboard in Resources */,
+				BB9FFA4A1C17EF5500D8B38C /* Assets.xcassets in Resources */,
+				BB9FFA451C17EF5500D8B38C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB9FFA381C17EF5500D8B38C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9FFA421C17EF5500D8B38C /* ViewController.swift in Sources */,
+				BB9FFA401C17EF5500D8B38C /* AppDelegate.swift in Sources */,
+				BB9FFA481C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB9FFA431C17EF5500D8B38C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9FFA441C17EF5500D8B38C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB9FFA4B1C17EF5500D8B38C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9FFA4C1C17EF5500D8B38C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB9FFA4F1C17EF5500D8B38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB9FFA501C17EF5500D8B38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB9FFA521C17EF5500D8B38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChunkyRadioV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.ChunkyRadioV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB9FFA531C17EF5500D8B38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChunkyRadioV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.ChunkyRadioV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB9FFA371C17EF5500D8B38C /* Build configuration list for PBXProject "ChunkyRadioV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9FFA4F1C17EF5500D8B38C /* Debug */,
+				BB9FFA501C17EF5500D8B38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9FFA511C17EF5500D8B38C /* Build configuration list for PBXNativeTarget "ChunkyRadioV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9FFA521C17EF5500D8B38C /* Debug */,
+				BB9FFA531C17EF5500D8B38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB9FFA461C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB9FFA471C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodel */,
+			);
+			currentVersion = BB9FFA471C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodel */;
+			path = ChunkyRadioV3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB9FFA341C17EF5500D8B38C /* Project object */;
+}
