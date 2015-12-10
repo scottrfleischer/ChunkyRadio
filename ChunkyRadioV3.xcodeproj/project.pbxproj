@@ -13,6 +13,7 @@
 		BB9FFA481C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB9FFA461C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld */; };
 		BB9FFA4A1C17EF5500D8B38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9FFA491C17EF5500D8B38C /* Assets.xcassets */; };
 		BB9FFA4D1C17EF5500D8B38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9FFA4B1C17EF5500D8B38C /* LaunchScreen.storyboard */; };
+		BB9FFA551C17F73200D8B38C /* SanFrancisco49ersAudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FFA541C17F73200D8B38C /* SanFrancisco49ersAudioPlayerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB9FFA491C17EF5500D8B38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9FFA4C1C17EF5500D8B38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9FFA4E1C17EF5500D8B38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9FFA541C17F73200D8B38C /* SanFrancisco49ersAudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanFrancisco49ersAudioPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,29 @@
 				BB9FFA3F1C17EF5500D8B38C /* AppDelegate.swift */,
 				BB9FFA411C17EF5500D8B38C /* ViewController.swift */,
 				BB9FFA431C17EF5500D8B38C /* Main.storyboard */,
+				BB9FFA561C17F73A00D8B38C /* Sports Audio Players */,
 				BB9FFA491C17EF5500D8B38C /* Assets.xcassets */,
 				BB9FFA4B1C17EF5500D8B38C /* LaunchScreen.storyboard */,
 				BB9FFA4E1C17EF5500D8B38C /* Info.plist */,
 				BB9FFA461C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld */,
 			);
 			path = ChunkyRadioV3;
+			sourceTree = "<group>";
+		};
+		BB9FFA561C17F73A00D8B38C /* Sports Audio Players */ = {
+			isa = PBXGroup;
+			children = (
+				BB9FFA571C17F74600D8B38C /* NFL Audio Players */,
+			);
+			name = "Sports Audio Players";
+			sourceTree = "<group>";
+		};
+		BB9FFA571C17F74600D8B38C /* NFL Audio Players */ = {
+			isa = PBXGroup;
+			children = (
+				BB9FFA541C17F73200D8B38C /* SanFrancisco49ersAudioPlayerViewController.swift */,
+			);
+			name = "NFL Audio Players";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				BB9FFA421C17EF5500D8B38C /* ViewController.swift in Sources */,
 				BB9FFA401C17EF5500D8B38C /* AppDelegate.swift in Sources */,
+				BB9FFA551C17F73200D8B38C /* SanFrancisco49ersAudioPlayerViewController.swift in Sources */,
 				BB9FFA481C17EF5500D8B38C /* ChunkyRadioV3.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
