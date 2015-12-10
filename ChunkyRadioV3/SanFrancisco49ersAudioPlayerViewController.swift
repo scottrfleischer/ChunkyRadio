@@ -8,8 +8,7 @@
 
 import UIKit
 import AVFoundation
-
-
+import Alamofire
 
 class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlayerDelegate {
     
@@ -110,6 +109,10 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
     // MARK: - View functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getPlaylistJSON()
+    }
+    
+    func setupView() {
         // Do any additional setup after loading the view, typically from a nib.
         
         // setup play list
@@ -120,9 +123,6 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
         
         // set button status
         self.setButtonStatus()
-        
-        // play track
-        self.playTrack()
     }
     
     override func didReceiveMemoryWarning() {
@@ -173,26 +173,55 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
         print(error!.localizedDescription)
     }
     
-    
+    private func getPlaylistJSON() {
+        let url = "https://s3-us-west-2.amazonaws.com/chunkyradiov2/AtlantaFalcons.json"
+        
+        Alamofire.request(.GET, url, parameters: nil)
+            .responseJSON { response in
+                
+                // gets the json
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+//                    
+//                    // step one: get a list of single articles
+//                    let articleDictionaries = JSON.valueForKey("responseData")?.valueForKey("results") as! [NSDictionary]
+//                    
+//                    // step two: extract the data we want,
+//                    // store it in Article objects
+//                    self.articles = articleDictionaries.map {
+//                        Article(title: $0["titleNoFormatting"] as! String, publisher: $0["publisher"] as! String)
+//                    }
+//                    
+//                    print(self.articles)
+                    let sources = JSON.valueForKey("source") as? NSArray
+                    for source in sources! {
+                        self.playListTitles.append(source.valueForKey("Title") as! String)
+                        self.playListFiles.append(source.valueForKey("URL") as! String)
+                    }
+                    
+                    self.setupView()
+                    
+                    self.playTrack()
+                }
+        }
+//        
+//        // audio resource file list
+//        self.playListFiles = ["http://media.957thegame.com/hosting/media/kgmz/1639665/111605018/roger-craig-111605018.mp3",
+//            "http://media.957thegame.com/hosting/media/kgmz/1622915/111584735/charles-haley-111584735.mp3",
+//            "http://media.957thegame.com/hosting/media/kgmz/1622915/111585467/trent-dlifer-111585467.mp3",
+//            "http://media.957thegame.com/hosting/media/kgmz/1639665/111577154/matt-maiocco-111577154.mp3"]
+//        
+//        // track title list
+//        self.playListTitles = ["1 - Roger Craig",
+//            "2 - Charles Haley",
+//            "3 - Trent Dilfer",
+//            "4 - Matt Maiocco"]
+    }
     
     // MARK: - Utility functions
     
     // setup playList
     private func setupPlayList() {
-        print("setupPlayList")
-        
-        // audio resource file list
-        self.playListFiles = ["http://media.957thegame.com/hosting/media/kgmz/1639665/111605018/roger-craig-111605018.mp3",
-            "http://media.957thegame.com/hosting/media/kgmz/1622915/111584735/charles-haley-111584735.mp3",
-            "http://media.957thegame.com/hosting/media/kgmz/1622915/111585467/trent-dlifer-111585467.mp3",
-            "http://media.957thegame.com/hosting/media/kgmz/1639665/111577154/matt-maiocco-111577154.mp3"]
-        
-        // track title list
-        self.playListTitles = ["1 - Roger Craig",
-            "2 - Charles Haley",
-            "3 - Trent Dilfer",
-            "4 - Matt Maiocco"]
-        
         // total number of track
         self.trackCount = self.playListFiles.count
         
@@ -207,6 +236,22 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
         self.playNextTrack()
     }
     
+    func getCurrentTitle() -> String {
+        if self.playListTitles.count > 0 {
+            return self.playListTitles[self.currentTrack-1]
+        } else {
+            return ""
+        }
+    }
+    
+    func getCurrentMp3() -> String {
+        if self.playListFiles.count > 0 {
+            return self.playListFiles[self.currentTrack-1]
+        } else {
+            return ""
+        }
+    }
+    
     // play current track
     private func playTrack() {
         print("playTrack()")
@@ -214,7 +259,7 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
         // set play status
         self.isPlaying = true
         
-        let currentMp3 = self.playListFiles[self.currentTrack-1]
+        let currentMp3 = getCurrentMp3()
         let playerItem = AVPlayerItem( URL:NSURL( string:currentMp3)! )
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidFinishPlaying:", name: AVPlayerItemDidPlayToEndTimeNotification, object: playerItem)
         
@@ -327,7 +372,7 @@ class SanFrancisco49ersAudioPlayerViewController: UIViewController, AVAudioPlaye
         self.trackInfo.text = "Track \(self.currentTrack) / \(self.trackCount)"
         
         // set track title
-        self.trackTitle.text = self.playListTitles[self.currentTrack - 1]
+        self.trackTitle.text = getCurrentTitle()
     }
     
     // update currently played time label.
